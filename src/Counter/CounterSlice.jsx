@@ -10,13 +10,13 @@ export const counterSlice = createSlice({
       state.value += 1
     },
     decrement: state => {
-      state.value -= 1
-      // if (counter <=0) {
-      //   counter.value.disabled = true
-      // }else{
-      //   state.value -= 1
-      // }
+      if (state.value > 0) {
+        state.value -= 1  
+      }
     },
+    // reset: state => {
+    //   value = 0
+    // },
     incrementByAmount: (state, action) => {
       state.value += action.payload
     }

@@ -10,7 +10,8 @@ function App() {
     <>
       <h3 className='text-2xl'>{count}</h3>
       <button onClick={() => dispatch(increment())} className='bg-teal-500 p-2 rounded-md mt-5 mr-2 text-white'>Increment</button>
-      <button onClick={() => dispatch(decrement())} className='bg-teal-500 p-2 rounded-md mt-5 text-white'>Decrement</button>
+      <button onClick={() => dispatch(decrement())} className='bg-teal-500 p-2 rounded-md mt-5 mr-2 text-white'>Decrement</button>
+      <button onClick={() => dispatch(reset())} className='bg-teal-500 p-2 rounded-md mt-5 text-white'>Reset</button>
     </>
   )
 }
